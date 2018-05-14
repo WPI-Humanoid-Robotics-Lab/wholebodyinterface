@@ -73,14 +73,14 @@ else()
     set(LIB_TYPE SHARED)
 endif()
 
-find_package(YCM REQUIRED)
-include(YCMDefaultDirs)
+#find_package(YCM REQUIRED)
+#include(YCMDefaultDirs)
 
-include(AddInstallRPATHSupport)
-add_install_rpath_support(BIN_DIRS "${CMAKE_INSTALL_PREFIX}/bin"
-                          LIB_DIRS "${CMAKE_INSTALL_PREFIX}/lib"
-                          DEPENDS WBI_ENABLE_RPATH
-                          USE_LINK_PATH)
+#include(AddInstallRPATHSupport)
+#add_install_rpath_support(BIN_DIRS "${CMAKE_INSTALL_PREFIX}/bin"
+#                          LIB_DIRS "${CMAKE_INSTALL_PREFIX}/lib"
+#                          DEPENDS WBI_ENABLE_RPATH
+#                          USE_LINK_PATH)
 
 
 add_library(${LIBRARYNAME} ${LIB_TYPE} ${folder_source} ${folder_header})
